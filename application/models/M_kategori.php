@@ -20,12 +20,6 @@ class M_kategori extends CI_Model
   
       return $result;
     }     
-    public function deleteKategori($id)
-	{
-		$this->db->where('id_kategori', $id);
-		$result = $this->db->delete('kategori');
-		return $result;
-	}
 
 	public function getDetailKategori($id)
 	{
@@ -43,6 +37,13 @@ class M_kategori extends CI_Model
         $this->db->where('id_kategori', $this->input->post('id_kategori'));
 		$result = $this->db->update('kategori', $edit);
 
+		return $result;
+	}
+
+	public function deleteKategori($id)
+	{
+		$this->db->where('id_kategori', $id);
+		$result = $this->db->delete('kategori');
 		return $result;
 	}
                         

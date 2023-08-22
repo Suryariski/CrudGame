@@ -88,6 +88,12 @@
                 </a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="<?= base_url('admin/Game') ?>">
+                  <i class="mdi mdi-clipboard-text menu-icon"></i>
+                  <span class="menu-title">Contoh</span>
+                </a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="<?= base_url('admin/Kategori') ?>">
                   <i class="mdi mdi-clipboard-text menu-icon"></i>
                   <span class="menu-title">Kategori</span>

@@ -39,13 +39,7 @@ class Kategori extends CI_Controller {
 			redirect('admin/Kategori/tambah');
         }
     }
-    public function hapus($id)
-	{
-		$this->M_kategori->deleteKategori($id);
-        $this->session->set_flashdata('success','Berhasil menghapus kategori !');
-		redirect('KategoriController');
-	}
-
+   
 	public function edit($id)
 	{
         $data['kategori'] = $this->M_kategori->getDetailKategori($id);
@@ -72,6 +66,14 @@ class Kategori extends CI_Controller {
 			redirect('admin/Kategori/edit/'.$this->input->post('id_kategori'));
         }
 	}
+
+    public function hapus($id)
+	{
+		$this->M_kategori->deleteKategori($id);
+        $this->session->set_flashdata('success','Berhasil menghapus kategori !');
+		redirect('KategoriController');
+	}
+
 }
 
 /* End of file Kategori.php and path \application\controllers\admin\Kategori.php */

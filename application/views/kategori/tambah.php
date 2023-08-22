@@ -2,19 +2,19 @@
 <div class="container-fluid page-body-wrapper">
         <div class="main-panel">
           <div class="content-wrapper">
+          <div class="row justify-content-center">
+              <div class="col-lg-10 ">
             <div class="page-header">
               <h3 class="page-title">Tambah Kategori</h3>
             </div>
-            <div class="row">
-              <div class="col-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
                     <h4 class="card-title mb-5">Form Tambah Kategori</h4>
-					<?php if($this->session->flashdata('error')): ?>
-						<div class="alert alert-danger">
-							<?= $this->session->flashdata('error') ?>
-						</div>
-					<?php endif ?>
+					          <?php if($this->session->flashdata('error')): ?>
+						        <div class="alert alert-danger">
+							      <?= $this->session->flashdata('error') ?>
+						      </div>
+					          <?php endif ?>
                     <form class="forms-sample" action="<?= base_url('admin/Kategori/add') ?>" method="POST">
                     <div class="form-group">
                         <label for="nama_kategori">ID Kategori</label>
@@ -26,7 +26,7 @@
                       </div>
                       <button type="submit" class="btn btn-primary me-2"> Simpan </button>
                     </form>
-					<a href="<?= base_url('KategoriController') ?>"><button class="btn btn-info mt-2">Kembali</button></a>
+					<a href="<?= base_url('admin/Kategori') ?>"><button class="btn btn-info mt-2">Kembali</button></a>
                   </div>
                 </div>
               </div>

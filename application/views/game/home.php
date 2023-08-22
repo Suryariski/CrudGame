@@ -1,15 +1,12 @@
 <div class="container-fluid page-body-wrapper">
         <div class="main-panel">
           <div class="content-wrapper">
+          <div class="row justify-content-center">
+			    	<div class="col-lg-10">
             <div class="page-header">
-              <h3 class="page-title">Game</h3>
-						<div class="col-lg-1">
-							<a href="<?= base_url('admin/Game/tambah') ?>"><button class="btn btn-primary">Tambah Game</button></a>
-						</div>
+              <h3 class="page-title">Game 🎮</h3>
             </div>
-            <div class="row">
-				<div class="col-lg-12">
-				<?php if($this->session->flashdata('success')): ?>
+				      <?php if($this->session->flashdata('success')): ?>
 									<div class="alert alert-success">
 										<?= $this->session->flashdata('success') ?>
 									</div>
@@ -20,14 +17,17 @@
 										<?= $this->session->flashdata('error') ?>
 									</div>
 							<?php endif ?>
-				</div>
-              <div class="col-lg-12 grid-margin stretch-card">
+				    </div>
+              <div class="col-lg-10 grid-margin stretch-card">
 			  
                 <div class="card">
                   <div class="card-body">
 					<div class="row mb-5">
 						<div class="col-lg-10">
-							<h4 class="card-title">Daftar Game</h4>
+							<h4 class="card-title">Daftar Game 🎮</h4>
+						</div>
+            <div class="col-lg-4">
+							<a href="<?= base_url('admin/Game/tambah') ?>"><button class="btn btn-primary">Tambah Game</button></a>
 						</div>
 					</div>
                     <div class="table-responsive">

@@ -2,11 +2,12 @@
 <div class="container-fluid page-body-wrapper">
         <div class="main-panel">
           <div class="content-wrapper">
+          <div class="row justify-content-center">
+              <div class="col-lg-10">
             <div class="page-header">
               <h3 class="page-title">Edit Game</h3>
             </div>
-            <div class="row">
-              <div class="col-12 grid-margin stretch-card">
+        
                 <div class="card">
                   <div class="card-body">
                     <h4 class="card-title mb-5">Form Edit Game</h4>

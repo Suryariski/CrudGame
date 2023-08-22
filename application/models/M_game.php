@@ -24,13 +24,7 @@ class M_game extends CI_Model
   
       return $result;
     }     
-    public function deleteGame($id)
-	{
-		$this->db->where('id_game', $id);
-		$result = $this->db->delete('game');
-		return $result;
-	}
-
+ 
 	public function getDetailGame($id)
 	{
 		$this->db->where('id_game',$id);
@@ -49,7 +43,13 @@ class M_game extends CI_Model
 
 		return $result;
 	}
-                        
+ 
+	public function deleteGame($id)
+	{
+		$this->db->where('id_game', $id);
+		$result = $this->db->delete('game');
+		return $result;
+	}
 }                
 
 

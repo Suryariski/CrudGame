@@ -1,28 +1,25 @@
 <div class="container-fluid page-body-wrapper">
         <div class="main-panel">
           <div class="content-wrapper">
+          <div class="row justify-content-center">
+				      <div class="col-lg-10">
             <div class="page-header">
               <h3 class="page-title">Kategori Game</h3>
-					
             </div>
-            <div class="row">
-				<div class="col-lg-12">
-				<?php if($this->session->flashdata('success')): ?>
+				        <?php if($this->session->flashdata('success')): ?>
 									<div class="alert alert-success">
-										<?= $this->session->flashdata('success') ?>
+									<?= $this->session->flashdata('success') ?>
 									</div>
-							<?php endif ?>
-
-							<?php if($this->session->flashdata('error')): ?>
+							  <?php endif ?>
+							  <?php if($this->session->flashdata('error')): ?>
 									<div class="alert alert-danger">
 										<?= $this->session->flashdata('error') ?>
 									</div>
-							<?php endif ?>
-				</div>
-              <div class="col-lg-12 grid-margin stretch-card">
-			  
-                <div class="card">
-                  <div class="card-body">
+							  <?php endif ?>
+				      </div>
+          <div class="col-lg-10 grid-margin stretch-card">
+          <div class="card">
+          <div class="card-body ">
 					<div class="row mb-5">
 						<div class="col-lg-10">
 							<h4 class="card-title">Daftar Kategori Game</h4>

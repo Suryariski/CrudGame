@@ -45,12 +45,6 @@ class Game extends CI_Controller {
 			redirect('admin/Game/tambah');
         }
     }
-    public function hapus($id)
-	{
-		$this->M_game->deleteGame($id);
-        $this->session->set_flashdata('success','Berhasil menghapus game !');
-		redirect('admin/Game');
-	}
 
 	public function edit($id)
 	{
@@ -78,6 +72,13 @@ class Game extends CI_Controller {
             $this->session->set_flashdata('error', validation_errors());
 			redirect('admin/Game/edit/'.$this->input->post('id_game'));
         }
+	}
+
+    public function hapus($id)
+	{
+		$this->M_game->deleteGame($id);
+        $this->session->set_flashdata('success','Berhasil menghapus game !');
+		redirect('admin/Game');
 	}
 }
 
